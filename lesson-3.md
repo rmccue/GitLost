@@ -1,4 +1,4 @@
-# Lesson 2: Hey Everyone, Look at What I Made!         (Or, Remotes and Pushing)
+# Lesson 3: Hey Everyone, Look at What I Made!         (Or, Remotes and Pushing)
 
 So, I've been working on the foobar project for a couple of weeks now, and it's
 gone from being a simple one-file project to something I'm proud of. I'm finally
@@ -57,4 +57,22 @@ a later lesson.
 
 }}}
 
-So, now that we know what this does, let's keep working for a bit
+So, now that we know what this does, let's keep working for a bit. I've
+committed some more stuff to my repository, and I want to send my new commits
+to GitHub again.
+
+	$ git push origin master
+
+And I'm done! Simple.
+
+{{{
+
+It can be annoying to have to type "origin master" every time. You can set it up
+to "track" automatically by doing:
+
+	$ git branch --track master origin/master
+
+}}}
+
+Here ends lesson three: remotes refer to other repositories, and you can push
+commits to them.
