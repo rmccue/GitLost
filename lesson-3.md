@@ -43,9 +43,8 @@ The convention in git is to call your main remote by the name of "origin".
 Remotes can be anywhere, and involve many different protocols. For example, you
 can add a remote pointing to another repository on your computer if you want.
 
-We then tell git to "pull" from our newly added remote. This says to git, "I
-want to fetch the latest changes from the repository at origin, and then merge
-them into my own code".
+We then tell git to "push" to our newly added remote. This says to git, "I
+want to send the latest changes from my repository to the one called origin".
 
 {{{
 
@@ -61,6 +60,10 @@ So, now that we know what this does, let's keep working for a bit. I've
 committed some more stuff to my repository, and I want to send my new commits
 to GitHub again.
 
+	$ git commit -m '...'
+	$ vim xyz.a
+	...
+	$ git commit -m '...'
 	$ git push origin master
 
 And I'm done! Simple.
